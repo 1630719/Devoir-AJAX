@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "nom": "Oral Schmeler IV",
+    "couleur": "#6c6b67",
+    "avatar" : "https://picsum.photos/id/76/200"
+  },
+  {
+    "id": "2",
+    "nom": "Tad McLaughlin",
+    "couleur": "#5d5c62",
+    "avatar" : "https://picsum.photos/id/65/200"
+  },
+  {
+    "id": "3",
+    "nom": "Matteo Wunsch",
+    "couleur": "#454f41",
+    "avatar" : "https://picsum.photos/id/64/200"
+  },
+  {
+    "id": "4",
+    "nom": "Jack Beahan MD",
+    "couleur": "#386b1f",
+    "avatar" : "https://picsum.photos/id/22/200"
+  }
+]
