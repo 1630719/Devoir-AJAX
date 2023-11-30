@@ -1,5 +1,5 @@
-{
-  "items": [{
+
+[{
     "id": 1,
     "nom": "Encyclopédie des meilleurs sorts",
     "prix": "$1075.27",
@@ -60,4 +60,3 @@
     "attaque": 1,
     "defense": 2
   }]
-}
