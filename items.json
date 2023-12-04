@@ -14,7 +14,7 @@
   }, {
     "id": 3,
     "nom": "Collier de macaronis",
-    "prix": "$1373.05",
+    "prix": "$1373.05" ,
     "attaque": 0,
     "defense": 5
   }, {

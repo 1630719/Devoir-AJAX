@@ -5,42 +5,61 @@
     <title>Équiper son personnage</title>
     <script src="script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-reboot.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-utilities.rtl.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.esm.js"></script>
   </head>
-  <body>
+  <body style="background-image: url(Bluey.jpg)">
     <header>
-      <h1>Équiper son personnage</h1>
+      <h1 class="display-5 fw-semibold text-center text-light">Équiper son personnage</h1>
     </header>
     <main>
-      <section>
-        <h2>Équipement disponible</h2>
-        <table class="bandes">
+
+        <div class="container row mx-auto bg-light bg-opacity-75">
+          <h2 class="h2 offset-1">Équipement disponible</h2>
+          <div class="container col-md-10">
+        <table class="table table-primary text-center opacity-100">
           <thead>
             <tr>
               <th scope="col">Nom</th>
-              <th scope="col">Bonus défense</th>
-              <th scope="col">Bonus attaque</th>
-              <th scope="col">Coût</th>
+              <th scope="col" >Bonus défense</th>
+              <th scope="col" >Bonus attaque</th>
+              <th scope="col" >Coût</th>
             </tr>
+
           </thead>
-          <tbody>
+          <tbody id="Body">
             <!-- Les items vont ici -->
           </tbody>
         </table>
-        <label for="achat">Acheter :</label>
+
+        <label for="achat" class="h3 fw-semibold">Acheter :</label>
         <select id="achat">
           <!-- Les items vont ici -->
+          <!-- Items sont ajoutés par requête Fetch dans script.js -->
         </select>
-        <button>Confirmer</button>
-        <p class="alerte invisible">Oups !</p>
-      </section>
-      <section>
+        <input type="button" id="Confirmer" value="Confirmer" class="btn btn-primary">
+         <p class="text-danger fw-semibold" id="Alerte_fonds"> </p>
+
+
         <h2>Statistiques</h2>
-        <ul>
+        <ul class="fw-semibold">
           <li>Argent : <span id="argent"></span></li>
           <li>Attaque : <span id="attaque"></span></li>
           <li>Défense : <span id="defense"></span></li>
         </ul>
-      </section>
+
+        <a id="LienNouvellePage" class="link-primary link-underline-light link-underline-opacity-0-hover fw-bold">
+            Prêts pour l'aventure ? Cliquez ici!</a>
+          </div>
+        </div>
     </main>
   </body>
 </html>
