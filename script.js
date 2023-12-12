@@ -91,7 +91,7 @@ $btn_confirmer.on('click', function (){
         if(element.id.toString() === id_item_achete)  // Si ID item acheté correspond à un de la liste
         {
             //On ajoute l'objet acheté à la liste
-            liste_envoi.push(" " + element.nom)
+            liste_envoi.push(element.nom + " ")
 
             //Remettre l'alerte invisible ou la garder ainsi si tout va bien
             $alerte.text("")
